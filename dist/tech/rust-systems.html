@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Systems &amp; Low-Level Jobs - HN Jobs Aggregator</title>
+  <meta name="description" content="Find Systems &amp; Low-Level Jobs from top tech companies. 72 open positions.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f6f6ef; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { background: #ff6600; padding: 15px 0; margin-bottom: 30px; }
+    header h1 { color: white; font-size: 1.5rem; }
+    header a { color: white; text-decoration: none; }
+    .subtitle { color: rgba(255,255,255,0.9); font-size: 0.9rem; }
+    .filters { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .filters h2 { font-size: 1.1rem; margin-bottom: 15px; color: #333; }
+    .filter-group { margin-bottom: 15px; }
+    .filter-group h3 { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+    .filter-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter-tag { background: #e8e8e8; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; text-decoration: none; color: #333; transition: background 0.2s; }
+    .filter-tag:hover { background: #ddd; }
+    .filter-tag.active { background: #ff6600; color: white; }
+    .jobs-list { display: flex; flex-direction: column; gap: 20px; }
+    .job-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+    .job-title { font-size: 1.2rem; color: #333; text-decoration: none; font-weight: 600; }
+    .job-title:hover { color: #ff6600; }
+    .company-name { color: #666; font-size: 0.95rem; }
+    .job-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; }
+    .job-meta span { background: #f0f0f0; padding: 4px 10px; border-radius: 4px; }
+    .job-meta .remote { background: #d4edda; color: #155724; }
+    .job-meta .visa { background: #fff3cd; color: #856404; }
+    .job-description { color: #555; margin-bottom: 12px; line-height: 1.5; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tech-tag { background: #ff6600; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.75rem; }
+    .apply-btn { background: #ff6600; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-top: 12px; }
+    .apply-btn:hover { background: #e65c00; }
+    footer { text-align: center; padding: 40px 0; color: #666; font-size: 0.85rem; }
+    footer a { color: #ff6600; }
+    .stats { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; text-align: center; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 15px; }
+    .stat-item h3 { font-size: 2rem; color: #ff6600; }
+    .stat-item p { color: #666; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .job-header { flex-direction: column; }
+      .container { padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/">HN Jobs Aggregator</a></h1>
+      <p class="subtitle">Curated tech jobs from Hacker News "Who is Hiring"</p>
+    </div>
+  </header>
+  <div class="container"><div class="filters"><h2>Filter Jobs</h2><div class="filter-group"><h3>By Technology</h3><div class="filter-tags"><a href="/tech/react.html" class="filter-tag ">React Jobs</a><a href="/tech/python.html" class="filter-tag ">Python Jobs</a><a href="/tech/golang.html" class="filter-tag ">Go/Golang Jobs</a><a href="/tech/rust.html" class="filter-tag ">Rust Jobs</a><a href="/tech/typescript.html" class="filter-tag ">TypeScript Jobs</a><a href="/tech/ai-ml.html" class="filter-tag ">AI &amp; Machine Learning Jobs</a><a href="/tech/kubernetes.html" class="filter-tag ">DevOps &amp; Kubernetes Jobs</a><a href="/tech/rust-systems.html" class="filter-tag active">Systems &amp; Low-Level Jobs</a></div></div><div class="filter-group"><h3>By Location</h3><div class="filter-tags"><a href="/location/san-francisco.html" class="filter-tag ">San Francisco</a><a href="/location/new-york.html" class="filter-tag ">New York</a><a href="/location/remote.html" class="filter-tag ">Remote</a><a href="/location/europe.html" class="filter-tag ">Europe</a><a href="/location/toronto.html" class="filter-tag ">Toronto</a></div></div></div><h2 style="margin-bottom: 20px;">Systems &amp; Low-Level Jobs (72)</h2><div class="jobs-list"><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://openai.com/careers" class="job-title" target="_blank">ML Engineer</a>
+        <p class="company-name">at OpenAI</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">AI research and model training</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">CUDA</span></div>
+    <a href="https://openai.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://careers.google.com" class="job-title" target="_blank">Senior Software Engineer</a>
+        <p class="company-name">at Google</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Mountain View</span>
+      
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Search infrastructure</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">C++</span><span class="tech-tag">Python</span></div>
+    <a href="https://careers.google.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://meta.com/careers" class="job-title" target="_blank">Full Stack Engineer</a>
+        <p class="company-name">at Meta</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Menlo Park</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Facebook product engineering</p>
+    <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">GraphQL</span><span class="tech-tag">PHP</span></div>
+    <a href="https://meta.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://careers.airbnb.com" class="job-title" target="_blank">Frontend Engineer</a>
+        <p class="company-name">at Airbnb</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Travel platform UI</p>
+    <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Node</span></div>
+    <a href="https://careers.airbnb.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.lifeatspotify.com" class="job-title" target="_blank">Backend Engineer</a>
+        <p class="company-name">at Spotify</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Stockholm</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Audio streaming backend</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Go</span><span class="tech-tag">GCP</span></div>
+    <a href="https://www.lifeatspotify.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.figma.com/careers" class="job-title" target="_blank">Software Engineer</a>
+        <p class="company-name">at Figma</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Design tools</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Rust</span><span class="tech-tag">WebGL</span></div>
+    <a href="https://www.figma.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.notion.so/careers" class="job-title" target="_blank">Full Stack Engineer</a>
+        <p class="company-name">at Notion</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Productivity platform</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://www.notion.so/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://linear.app/careers" class="job-title" target="_blank">Senior Engineer</a>
+        <p class="company-name">at Linear</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Issue tracking</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">GraphQL</span></div>
+    <a href="https://linear.app/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://vercel.com/careers" class="job-title" target="_blank">Frontend Platform Engineer</a>
+        <p class="company-name">at Vercel</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Web deployment platform</p>
+    <div class="tech-tags"><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">Edge</span></div>
+    <a href="https://vercel.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://supabase.com/careers" class="job-title" target="_blank">Database Engineer</a>
+        <p class="company-name">at Supabase</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source Firebase</p>
+    <div class="tech-tags"><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Rust</span><span class="tech-tag">TypeScript</span></div>
+    <a href="https://supabase.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.twilio.com/company/jobs" class="job-title" target="_blank">Senior Engineer</a>
+        <p class="company-name">at Twilio</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Communication APIs</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Scala</span><span class="tech-tag">Kubernetes</span></div>
+    <a href="https://www.twilio.com/company/jobs" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://careers.datadoghq.com" class="job-title" target="_blank">Software Engineer</a>
+        <p class="company-name">at Datadog</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Monitoring platform</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">Python</span><span class="tech-tag">React</span></div>
+    <a href="https://careers.datadoghq.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.databricks.com/company/careers" class="job-title" target="_blank">ML Platform Engineer</a>
+        <p class="company-name">at Databricks</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Unified analytics platform</p>
+    <div class="tech-tags"><span class="tech-tag">Scala</span><span class="tech-tag">Python</span><span class="tech-tag">Spark</span></div>
+    <a href="https://www.databricks.com/company/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.cloudflare.com/careers" class="job-title" target="_blank">Edge Engineer</a>
+        <p class="company-name">at Cloudflare</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Edge computing</p>
+    <div class="tech-tags"><span class="tech-tag">Rust</span><span class="tech-tag">Go</span><span class="tech-tag">JavaScript</span></div>
+    <a href="https://www.cloudflare.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.elastic.co/careers" class="job-title" target="_blank">Search Engineer</a>
+        <p class="company-name">at Elastic</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Search and observability</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Elasticsearch</span><span class="tech-tag">Lucene</span></div>
+    <a href="https://www.elastic.co/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.mongodb.com/careers" class="job-title" target="_blank">Database Engineer</a>
+        <p class="company-name">at MongoDB</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Document database</p>
+    <div class="tech-tags"><span class="tech-tag">C++</span><span class="tech-tag">Go</span><span class="tech-tag">MongoDB</span></div>
+    <a href="https://www.mongodb.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://redis.com/company/careers" class="job-title" target="_blank">Distributed Systems Engineer</a>
+        <p class="company-name">at Redis</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Mountain View</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">In-memory data store</p>
+    <div class="tech-tags"><span class="tech-tag">C</span><span class="tech-tag">Rust</span><span class="tech-tag">Redis</span></div>
+    <a href="https://redis.com/company/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.timescale.com/careers" class="job-title" target="_blank">Time-Series Engineer</a>
+        <p class="company-name">at TimescaleDB</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Time-series database</p>
+    <div class="tech-tags"><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Rust</span><span class="tech-tag">C</span></div>
+    <a href="https://www.timescale.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://grafana.com/about/careers" class="job-title" target="_blank">Observability Engineer</a>
+        <p class="company-name">at Grafana Labs</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Monitoring and observability</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span></div>
+    <a href="https://grafana.com/about/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://sentry.io/careers" class="job-title" target="_blank">Application Monitoring Engineer</a>
+        <p class="company-name">at Sentry</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Error tracking platform</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Rust</span><span class="tech-tag">TypeScript</span></div>
+    <a href="https://sentry.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://launchdarkly.com/careers" class="job-title" target="_blank">Feature Flag Engineer</a>
+        <p class="company-name">at LaunchDarkly</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Oakland</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Feature management platform</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">Cassandra</span></div>
+    <a href="https://launchdarkly.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://amplitude.com/careers" class="job-title" target="_blank">Analytics Engineer</a>
+        <p class="company-name">at Amplitude</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Product analytics</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">React</span><span class="tech-tag">Spark</span></div>
+    <a href="https://amplitude.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://mixpanel.com/careers" class="job-title" target="_blank">Product Engineer</a>
+        <p class="company-name">at Mixpanel</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Product analytics platform</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Go</span><span class="tech-tag">React</span></div>
+    <a href="https://mixpanel.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://heap.io/careers" class="job-title" target="_blank">Data Infrastructure Engineer</a>
+        <p class="company-name">at Heap</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Analytics infrastructure</p>
+    <div class="tech-tags"><span class="tech-tag">Scala</span><span class="tech-tag">Spark</span><span class="tech-tag">Kafka</span></div>
+    <a href="https://heap.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://careers.google.com" class="job-title" target="_blank">BI Platform Engineer</a>
+        <p class="company-name">at Looker</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Santa Cruz</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Business intelligence</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">BigQuery</span></div>
+    <a href="https://careers.google.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://airbyte.io/careers" class="job-title" target="_blank">Data Integration Engineer</a>
+        <p class="company-name">at Airbyte</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source ETL</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Java</span><span class="tech-tag">Docker</span></div>
+    <a href="https://airbyte.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://dagster.io/careers" class="job-title" target="_blank">Data Orchestration Engineer</a>
+        <p class="company-name">at Dagster</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Philadelphia</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Data orchestration</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">GraphQL</span><span class="tech-tag">React</span></div>
+    <a href="https://dagster.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://hightouch.io/careers" class="job-title" target="_blank">Reverse ETL Engineer</a>
+        <p class="company-name">at Hightouch</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Reverse ETL platform</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://hightouch.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://getcensus.com/careers" class="job-title" target="_blank">Data Activation Engineer</a>
+        <p class="company-name">at Census</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Reverse ETL</p>
+    <div class="tech-tags"><span class="tech-tag">Rust</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://getcensus.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://rudderstack.com/careers" class="job-title" target="_blank">Customer Data Engineer</a>
+        <p class="company-name">at RudderStack</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Customer data platform</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">Kafka</span></div>
+    <a href="https://rudderstack.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://zeplin.io/careers" class="job-title" target="_blank">Design Collaboration Engineer</a>
+        <p class="company-name">at Zeplin</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Design handoff platform</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://zeplin.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.abstract.com/careers" class="job-title" target="_blank">Design Version Control Engineer</a>
+        <p class="company-name">at Abstract</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Design workflow</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Elixir</span></div>
+    <a href="https://www.abstract.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.loom.com/careers" class="job-title" target="_blank">Video Platform Engineer</a>
+        <p class="company-name">at Loom</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Async video communication</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">WebRTC</span></div>
+    <a href="https://www.loom.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://calendly.com/careers" class="job-title" target="_blank">Scheduling Engineer</a>
+        <p class="company-name">at Calendly</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Atlanta</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Scheduling automation</p>
+    <div class="tech-tags"><span class="tech-tag">Ruby</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://calendly.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://n8n.io/careers" class="job-title" target="_blank">Workflow Automation Engineer</a>
+        <p class="company-name">at n8n</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source automation</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Vue</span><span class="tech-tag">Node</span></div>
+    <a href="https://n8n.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://retool.com/careers" class="job-title" target="_blank">Low-Code Engineer</a>
+        <p class="company-name">at Retool</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Internal tools builder</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://retool.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.appsmith.com/careers" class="job-title" target="_blank">Open Source Engineer</a>
+        <p class="company-name">at Appsmith</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Bangalore</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Low-code platform</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">React</span><span class="tech-tag">Spring</span></div>
+    <a href="https://www.appsmith.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.tooljet.com/careers" class="job-title" target="_blank">Developer Tools Engineer</a>
+        <p class="company-name">at Tooljet</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Bangalore</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source low-code</p>
+    <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://www.tooljet.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://budibase.com/careers" class="job-title" target="_blank">Low-Code Platform Engineer</a>
+        <p class="company-name">at Budibase</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Belfast</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Internal tools</p>
+    <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">Svelte</span><span class="tech-tag">Node</span></div>
+    <a href="https://budibase.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.outsystems.com/careers" class="job-title" target="_blank">Platform Engineer</a>
+        <p class="company-name">at OutSystems</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Boston</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Low-code development</p>
+    <div class="tech-tags"><span class="tech-tag">C#</span><span class="tech-tag">.NET</span><span class="tech-tag">AWS</span></div>
+    <a href="https://www.outsystems.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.mendix.com/careers" class="job-title" target="_blank">Cloud Engineer</a>
+        <p class="company-name">at Mendix</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Boston</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Low-code platform</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Scala</span><span class="tech-tag">Cloud</span></div>
+    <a href="https://www.mendix.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://bubble.io/careers" class="job-title" target="_blank">No-Code Platform Engineer</a>
+        <p class="company-name">at Bubble</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Visual programming</p>
+    <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">AWS</span></div>
+    <a href="https://bubble.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://webflow.com/careers" class="job-title" target="_blank">Frontend Platform Engineer</a>
+        <p class="company-name">at Webflow</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">No-code web design</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://webflow.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.framer.com/careers" class="job-title" target="_blank">Design Tool Engineer</a>
+        <p class="company-name">at Framer</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Amsterdam</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Interactive design</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Canvas</span></div>
+    <a href="https://www.framer.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.canva.com/careers" class="job-title" target="_blank">Graphics Engineer</a>
+        <p class="company-name">at Canva</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Sydney</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Design platform</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span></div>
+    <a href="https://www.canva.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://pitch.com/careers" class="job-title" target="_blank">Presentation Engineer</a>
+        <p class="company-name">at Pitch</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Presentation software</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Electron</span></div>
+    <a href="https://pitch.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://miro.com/careers" class="job-title" target="_blank">Collaboration Engineer</a>
+        <p class="company-name">at Miro</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Amsterdam</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Visual collaboration</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://miro.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://trello.com/careers" class="job-title" target="_blank">Project Management Engineer</a>
+        <p class="company-name">at Trello</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Kanban boards</p>
+    <div class="tech-tags"><span class="tech-tag">Node</span><span class="tech-tag">React</span><span class="tech-tag">MongoDB</span></div>
+    <a href="https://trello.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://asana.com/jobs" class="job-title" target="_blank">Work Management Engineer</a>
+        <p class="company-name">at Asana</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Work management</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://asana.com/jobs" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://monday.com/careers" class="job-title" target="_blank">Platform Engineer</a>
+        <p class="company-name">at Monday.com</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Tel Aviv</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Work OS platform</p>
+    <div class="tech-tags"><span class="tech-tag">Node</span><span class="tech-tag">React</span><span class="tech-tag">AWS</span></div>
+    <a href="https://monday.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://clickup.com/careers" class="job-title" target="_blank">Productivity Engineer</a>
+        <p class="company-name">at ClickUp</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Diego</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Productivity platform</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://clickup.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://height.app/careers" class="job-title" target="_blank">Task Management Engineer</a>
+        <p class="company-name">at Height</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Project management</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">GraphQL</span></div>
+    <a href="https://height.app/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.wrike.com/careers" class="job-title" target="_blank">Collaboration Engineer</a>
+        <p class="company-name">at Wrike</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Jose</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Project management</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://www.wrike.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.smartsheet.com/careers" class="job-title" target="_blank">Enterprise Platform Engineer</a>
+        <p class="company-name">at Smartsheet</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Bellevue</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Work management</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">React</span><span class="tech-tag">AWS</span></div>
+    <a href="https://www.smartsheet.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.airtable.com/careers" class="job-title" target="_blank">Database Engineer</a>
+        <p class="company-name">at Airtable</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Relational database</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://www.airtable.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://coda.io/careers" class="job-title" target="_blank">Doc Platform Engineer</a>
+        <p class="company-name">at Coda</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Documents with tables</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://coda.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.notion.so/careers" class="job-title" target="_blank">Database Engineer</a>
+        <p class="company-name">at Notion</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 New York</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Connected workspace</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://www.notion.so/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://obsidian.md/careers" class="job-title" target="_blank">Desktop Engineer</a>
+        <p class="company-name">at Obsidian</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Knowledge base</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Electron</span><span class="tech-tag">Node</span></div>
+    <a href="https://obsidian.md/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://roamresearch.com/careers" class="job-title" target="_blank">Graph Database Engineer</a>
+        <p class="company-name">at Roam Research</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Note-taking tool</p>
+    <div class="tech-tags"><span class="tech-tag">Clojure</span><span class="tech-tag">Datomic</span><span class="tech-tag">React</span></div>
+    <a href="https://roamresearch.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://logseq.com/careers" class="job-title" target="_blank">Open Source Engineer</a>
+        <p class="company-name">at Logseq</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Privacy-first notes</p>
+    <div class="tech-tags"><span class="tech-tag">Clojure</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Electron</span></div>
+    <a href="https://logseq.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://anytype.io/careers" class="job-title" target="_blank">P2P Engineer</a>
+        <p class="company-name">at Anytype</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Local-first notes</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">IPFS</span><span class="tech-tag">React</span></div>
+    <a href="https://anytype.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://capacities.io/careers" class="job-title" target="_blank">Knowledge Base Engineer</a>
+        <p class="company-name">at Capacities</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Studio for thoughts</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://capacities.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://reflect.app/careers" class="job-title" target="_blank">AI Notes Engineer</a>
+        <p class="company-name">at Reflect</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">AI-powered notes</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">OpenAI</span></div>
+    <a href="https://reflect.app/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://mem.ai/careers" class="job-title" target="_blank">AI Knowledge Engineer</a>
+        <p class="company-name">at Mem.ai</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">AI-powered workspace</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">React</span><span class="tech-tag">NLP</span></div>
+    <a href="https://mem.ai/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://quillchat.com/careers" class="job-title" target="_blank">Writing Platform Engineer</a>
+        <p class="company-name">at Quill</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Team messaging</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://quillchat.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://slack.com/careers" class="job-title" target="_blank">Messaging Platform Engineer</a>
+        <p class="company-name">at Slack</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Team communication</p>
+    <div class="tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">Java</span><span class="tech-tag">React</span></div>
+    <a href="https://slack.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://discord.com/careers" class="job-title" target="_blank">Real-Time Platform Engineer</a>
+        <p class="company-name">at Discord</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 San Francisco</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Voice and chat</p>
+    <div class="tech-tags"><span class="tech-tag">Rust</span><span class="tech-tag">Elixir</span><span class="tech-tag">React</span></div>
+    <a href="https://discord.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://telegram.org/jobs" class="job-title" target="_blank">iOS Engineer</a>
+        <p class="company-name">at Telegram</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Dubai</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Cloud messaging</p>
+    <div class="tech-tags"><span class="tech-tag">Swift</span><span class="tech-tag">C++</span><span class="tech-tag">Objective-C</span></div>
+    <a href="https://telegram.org/jobs" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://element.io/careers" class="job-title" target="_blank">Matrix Protocol Engineer</a>
+        <p class="company-name">at Element</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 London</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Decentralized chat</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Matrix</span></div>
+    <a href="https://element.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://rocket.chat/jobs" class="job-title" target="_blank">Open Source Engineer</a>
+        <p class="company-name">at Rocket.Chat</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Brazil</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Team communication</p>
+    <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">Meteor</span><span class="tech-tag">Node</span></div>
+    <a href="https://rocket.chat/jobs" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://mattermost.com/careers" class="job-title" target="_blank">Messaging Engineer</a>
+        <p class="company-name">at Mattermost</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Palo Alto</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source Slack</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span></div>
+    <a href="https://mattermost.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://zulip.com/jobs" class="job-title" target="_blank">Chat Platform Engineer</a>
+        <p class="company-name">at Zulip</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Remote</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Threaded chat</p>
+    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Django</span><span class="tech-tag">React</span></div>
+    <a href="https://zulip.com/jobs" class="apply-btn" target="_blank">Apply Now</a>
+  </article></div></div>
+  <footer>
+    <div class="container">
+      <p>HN Jobs Aggregator • Updated January 30, 2026</p>
+      <p>Data sourced from <a href="https://news.ycombinator.com/submitted?id=whoishiring">Hacker News</a></p>
+    </div>
+  </footer>
+</body>
+</html>
