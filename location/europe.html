@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Tech Jobs - HN Jobs Aggregator</title>
+  <meta name="description" content="Find tech jobs in Europe. 9 open positions.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f6f6ef; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { background: #ff6600; padding: 15px 0; margin-bottom: 30px; }
+    header h1 { color: white; font-size: 1.5rem; }
+    header a { color: white; text-decoration: none; }
+    .subtitle { color: rgba(255,255,255,0.9); font-size: 0.9rem; }
+    .filters { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .filters h2 { font-size: 1.1rem; margin-bottom: 15px; color: #333; }
+    .filter-group { margin-bottom: 15px; }
+    .filter-group h3 { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+    .filter-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter-tag { background: #e8e8e8; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; text-decoration: none; color: #333; transition: background 0.2s; }
+    .filter-tag:hover { background: #ddd; }
+    .filter-tag.active { background: #ff6600; color: white; }
+    .jobs-list { display: flex; flex-direction: column; gap: 20px; }
+    .job-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+    .job-title { font-size: 1.2rem; color: #333; text-decoration: none; font-weight: 600; }
+    .job-title:hover { color: #ff6600; }
+    .company-name { color: #666; font-size: 0.95rem; }
+    .job-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; }
+    .job-meta span { background: #f0f0f0; padding: 4px 10px; border-radius: 4px; }
+    .job-meta .remote { background: #d4edda; color: #155724; }
+    .job-meta .visa { background: #fff3cd; color: #856404; }
+    .job-description { color: #555; margin-bottom: 12px; line-height: 1.5; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tech-tag { background: #ff6600; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.75rem; }
+    .apply-btn { background: #ff6600; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-top: 12px; }
+    .apply-btn:hover { background: #e65c00; }
+    footer { text-align: center; padding: 40px 0; color: #666; font-size: 0.85rem; }
+    footer a { color: #ff6600; }
+    .stats { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; text-align: center; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 15px; }
+    .stat-item h3 { font-size: 2rem; color: #ff6600; }
+    .stat-item p { color: #666; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .job-header { flex-direction: column; }
+      .container { padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/">HN Jobs Aggregator</a></h1>
+      <p class="subtitle">Curated tech jobs from Hacker News "Who is Hiring"</p>
+    </div>
+  </header>
+  <div class="container"><div class="filters"><h2>Filter Jobs</h2><div class="filter-group"><h3>By Technology</h3><div class="filter-tags"><a href="/tech/react.html" class="filter-tag ">React Jobs</a><a href="/tech/python.html" class="filter-tag ">Python Jobs</a><a href="/tech/golang.html" class="filter-tag ">Go/Golang Jobs</a><a href="/tech/rust.html" class="filter-tag ">Rust Jobs</a><a href="/tech/typescript.html" class="filter-tag ">TypeScript Jobs</a><a href="/tech/ai-ml.html" class="filter-tag ">AI &amp; Machine Learning Jobs</a><a href="/tech/kubernetes.html" class="filter-tag ">DevOps &amp; Kubernetes Jobs</a><a href="/tech/rust-systems.html" class="filter-tag ">Systems &amp; Low-Level Jobs</a></div></div><div class="filter-group"><h3>By Location</h3><div class="filter-tags"><a href="/location/san-francisco.html" class="filter-tag ">San Francisco</a><a href="/location/new-york.html" class="filter-tag ">New York</a><a href="/location/remote.html" class="filter-tag ">Remote</a><a href="/location/europe.html" class="filter-tag active">Europe</a><a href="/location/toronto.html" class="filter-tag ">Toronto</a></div></div></div><h2 style="margin-bottom: 20px;">Europe Jobs (9)</h2><div class="jobs-list"><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.lifeatspotify.com" class="job-title" target="_blank">Backend Engineer</a>
+        <p class="company-name">at Spotify</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Stockholm</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Audio streaming backend</p>
+    <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Go</span><span class="tech-tag">GCP</span></div>
+    <a href="https://www.lifeatspotify.com" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.make.com/careers" class="job-title" target="_blank">Automation Engineer</a>
+        <p class="company-name">at Make</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Prague</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Workflow automation</p>
+    <div class="tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">Go</span><span class="tech-tag">PostgreSQL</span></div>
+    <a href="https://www.make.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://n8n.io/careers" class="job-title" target="_blank">Workflow Automation Engineer</a>
+        <p class="company-name">at n8n</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Open source automation</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Vue</span><span class="tech-tag">Node</span></div>
+    <a href="https://n8n.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://www.framer.com/careers" class="job-title" target="_blank">Design Tool Engineer</a>
+        <p class="company-name">at Framer</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Amsterdam</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Interactive design</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Canvas</span></div>
+    <a href="https://www.framer.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://pitch.com/careers" class="job-title" target="_blank">Presentation Engineer</a>
+        <p class="company-name">at Pitch</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Presentation software</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Electron</span></div>
+    <a href="https://pitch.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://miro.com/careers" class="job-title" target="_blank">Collaboration Engineer</a>
+        <p class="company-name">at Miro</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Amsterdam</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Visual collaboration</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://miro.com/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://anytype.io/careers" class="job-title" target="_blank">P2P Engineer</a>
+        <p class="company-name">at Anytype</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Local-first notes</p>
+    <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">IPFS</span><span class="tech-tag">React</span></div>
+    <a href="https://anytype.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://capacities.io/careers" class="job-title" target="_blank">Knowledge Base Engineer</a>
+        <p class="company-name">at Capacities</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 Berlin</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Studio for thoughts</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Node</span></div>
+    <a href="https://capacities.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article><article class="job-card">
+    <div class="job-header">
+      <div>
+        <a href="https://element.io/careers" class="job-title" target="_blank">Matrix Protocol Engineer</a>
+        <p class="company-name">at Element</p>
+      </div>
+    </div>
+    <div class="job-meta">
+      <span>📍 London</span>
+      <span class="remote">🌐 Remote</span>
+      <span class="visa">🛂 Visa</span>
+    </div>
+    <p class="job-description">Decentralized chat</p>
+    <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Matrix</span></div>
+    <a href="https://element.io/careers" class="apply-btn" target="_blank">Apply Now</a>
+  </article></div></div>
+  <footer>
+    <div class="container">
+      <p>HN Jobs Aggregator • Updated January 30, 2026</p>
+      <p>Data sourced from <a href="https://news.ycombinator.com/submitted?id=whoishiring">Hacker News</a></p>
+    </div>
+  </footer>
+</body>
+</html>
